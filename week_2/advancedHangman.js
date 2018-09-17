@@ -65,11 +65,11 @@ function main(){
     let charGuess = prompt("Guess a character! Word so far: " + player.knownChars.join('')).toLowerCase();
     compareCharacters(charGuess);
 
-    if(checkWin() == true){ alert("You saved them, " + player.name + "!"); return; };
+    if(checkWin() == true){ alert("You saved them, " + player.name + "! The word was: " + hangedMan.safeWord); return; };
   }
 
   if(hangedMan.lives === 0){
-    alert("How could you leave him hanging " + player.name + "?");
+    alert("How could you leave him hanging " + player.name + "? The word was: " + hangedMan.safeWord);
   }
 
 }
