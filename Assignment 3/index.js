@@ -1,5 +1,5 @@
 
-var verseChoose = document.querySelector('select');
+var bookChoose = document.querySelector('select');
 var bookDisplay = document.querySelector('display');
         
     //define an onchange event handler function so that when the select's value is changed, its value is passed to an invoked function updateDisplay() as a parameter
