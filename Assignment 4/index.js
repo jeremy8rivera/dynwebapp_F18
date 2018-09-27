@@ -1,6 +1,10 @@
 //Create constants to call to site and deal with DOM
+
+//Thank you stackOverflow
+const proxyUrl = 'https://cors-anywhere.herokuapp.com/'
 const ul = document.getElementById('recipes');
-const url = 'http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3'
+const ActualUrl = 'http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3'
+const newUrl = proxyUrl + ActualUrl;
 
 
 //functions to add elements to html
@@ -13,7 +17,9 @@ const url = 'http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3'
   }
 
 //grab data from the URL
-fetch(url).then((resp) => resp.json()).then(function(data){
+fetch(newUrl)
+.then((resp) => resp.json())
+.then(function(data){
 	let recipes = data.results;
 	console.log(recipes);
 	return recipes.map(function(recipes) {
@@ -21,9 +27,9 @@ fetch(url).then((resp) => resp.json()).then(function(data){
           img = createNode('img'),
           span = createNode('span');
       img.src = recipes.thumbnail;
-      span.innerHTML = `${recipes.title} ${recipes.ingredients}`;
-      append(li, img);
+      span.innerHTML = `<h3>${recipes.title}</h3> <p>${recipes.ingredients}</p>`;
       append(li, span);
+      append(li, img);
       append(ul, li);
   })
 })

@@ -1,0 +1,14 @@
+h1{
+	margin-bottom: 20px;
+}
+
+#recipes {
+	list-style-type: none;
+	width: 80%;
+	margin: 0 auto;
+}
+
+#recipes li {
+	margin-bottom: 20px;
+	border: 1px solid black;
+}
