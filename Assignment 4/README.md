@@ -7,5 +7,5 @@
 - Javascript is properly formatted (2 points)
 
 **API USED**
-[Recipe Puppy] (http://www.recipepuppy.com/)
+[Recipe Puppy](http://www.recipepuppy.com/)
 
