@@ -1,4 +1,4 @@
-# TranslatorBot
+# Translator Bot
 ## Goal: To translate a tweet from any language to a new language when mentioned.
 
 ### Steps:
@@ -8,7 +8,19 @@
 4. Take mention text and translate
 5. Reply to mention with translated text
 
-Api necessary: [Twitter API](https://developer.twitter.com/en/)
+*Example*
+>@randomUser: "Hello! This is my tweet."
+>@randumUser2: "@randomUser @translatorBot en to es"
+>@translatorBot: "@randumUser @randomUser2 Hola! Este es mi tweet.
+
+Api necessary:
+- [Twitter API](https://developer.twitter.com/en/)
 Packages Used: 
 - [Twit](https://www.npmjs.com/package/twit)
 - [Google Translate API](https://www.npmjs.com/package/google-translate-api)
+
+__Known Issues__
+- No conditional if text is wrong
+- Tweet response is async
+- Runs on a time interval and not on every mention
+- Doesn't thread tweets
