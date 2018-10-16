@@ -10,9 +10,9 @@
 
 __Example:__
 
-@randomUser: "Hello! This is my tweet."
-| @randumUser2: "@randomUser @translatorBot en to es"
-| | @translatorBot: "@randumUser @randomUser2 Hola! Este es mi tweet."
+>@randomUser: "Hello! This is my tweet." <br/>
+>| @randumUser2: "@randomUser @translatorBot en to es"<br/>
+>| | @translatorBot: "@randumUser @randomUser2 Hola! Este es mi tweet."<br/>
 
 Api necessary:
 - [Twitter API](https://developer.twitter.com/en/)
