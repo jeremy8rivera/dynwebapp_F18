@@ -97,8 +97,8 @@ function MessageArrayMaker(translatedMessage){
 	translatedMessageList = [];
 	if(translatedMessage.length > 274){
 		while (translatedMessage.length != 0){
-			let temp = translatedMessage.slice(0,250);
-			translatedMessage = translatedMessage.slice(250);
+			let temp = translatedMessage.slice(0,220);
+			translatedMessage = translatedMessage.slice(220);
 			firstSpace = translatedMessage.indexOf(' ');
 			let addedWord;
 			if(firstSpace != -1){
