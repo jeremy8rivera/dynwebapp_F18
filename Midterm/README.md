@@ -8,10 +8,10 @@
 4. Take mention text and translate
 5. Reply to mention with translated text
 
-*Example*
->@randomUser: "Hello! This is my tweet."
->@randumUser2: "@randomUser @translatorBot en to es"
->@translatorBot: "@randumUser @randomUser2 Hola! Este es mi tweet.
+__Example__
+@randomUser: "Hello! This is my tweet."
+| @randumUser2: "@randomUser @translatorBot en to es"
+| | @translatorBot: "@randumUser @randomUser2 Hola! Este es mi tweet."
 
 Api necessary:
 - [Twitter API](https://developer.twitter.com/en/)
