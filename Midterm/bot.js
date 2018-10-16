@@ -97,8 +97,8 @@ function MessageArrayMaker(translatedMessage){
 	translatedMessageList = [];
 	if(translatedMessage.length > 274){
 		while (translatedMessage.length != 0){
-			let temp = translatedMessage.slice(0,220);
-			translatedMessage = translatedMessage.slice(220);
+			let temp = translatedMessage.slice(0,200);
+			translatedMessage = translatedMessage.slice(200);
 			firstSpace = translatedMessage.indexOf(' ');
 			let addedWord;
 			if(firstSpace != -1){
@@ -134,4 +134,4 @@ function MessageArrayMaker(translatedMessage){
 
 setInterval(function(){
 	runDatBot();
-}, 1000*60);
+}, 1000*15);

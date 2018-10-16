@@ -25,3 +25,4 @@ __Known Issues__
 - Tweet response is async
 - Runs on a time interval and not on every mention
 - Doesn't thread tweets
+- I don't know non romance language 'space' characters
