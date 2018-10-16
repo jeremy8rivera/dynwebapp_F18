@@ -8,7 +8,8 @@
 4. Take mention text and translate
 5. Reply to mention with translated text
 
-__Example__
+__Example:__
+
 @randomUser: "Hello! This is my tweet."
 | @randumUser2: "@randomUser @translatorBot en to es"
 | | @translatorBot: "@randumUser @randomUser2 Hola! Este es mi tweet."
