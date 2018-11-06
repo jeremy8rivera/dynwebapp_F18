@@ -1,0 +1,33 @@
+.container{
+	width: 50%;
+	float: left;
+}
+
+.container fieldset{
+	min-height: 400px;
+}
+
+textarea{
+	width: 90%;
+	height: auto;
+	float: left;
+	clear: both;
+	border: 0px;
+	resize: none;
+	outline: none;
+}
+
+input[type='submit']{
+	float:right;
+	clear:both;
+	border-radius: 5px;
+	border: 1px solid black;
+	background-color: #4274f4;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+
+input[type='submit']:active {
+	background-color: #4150f4;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= name%> | Translate</title>
+	<link rel="stylesheet" type="text/css" href="/app.css">
+</head>
+<body>
+	<h1>Translate English to Spanish</h1>
+	<div class="container">
+		<fieldset>
+			<form action="/app/<%=name%>" method="post">
+				<h2>Source Text:</h2>
+				<textarea name="source" placeholder="Type here..."></textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</fieldset>
+	</div>
+
+	<div class="container">
+		<fieldset>
+		<h2>Translated text:</h2>
+		<div id="targetLang"><%= target %></div>
+	</fieldset>
+	</div>
+</body>
+</html>
